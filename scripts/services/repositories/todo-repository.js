@@ -11,6 +11,13 @@ const todoRepository = {
       console.error('Ошибка получения списка задач: ', error);
     }
   },
+  async createTodoItem(params) {
+    try {
+      await http.post('/todos', params);
+    } catch (error) {
+      console.error('Ошибка получения списка задач: ', error);
+    }
+  },
 }
 
 export default todoRepository;

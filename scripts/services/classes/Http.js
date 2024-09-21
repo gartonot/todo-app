@@ -8,6 +8,13 @@ class Http {
     return response;
   }
 
+  async post(url, params) {
+    await fetch(`${this.apiUrl}${url}`, {
+      method: 'POST',
+      body: JSON.stringify(params),
+    }).then(response => response.json());
+  }
+
 }
 
 export default Http;
