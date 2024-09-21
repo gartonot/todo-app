@@ -1,0 +1,13 @@
+body {
+  background-color: var(--color-gray);
+  color: var(--color-black);
+  font-family: var(--font-family-default);
+}
+
+.app-content {
+  --max-width: 1024px;
+  --padding-inline: 100px;
+  max-width: calc(var(--max-width) + var(--padding-inline));
+  margin-inline: auto;
+  padding-inline: var(--padding-inline);
+}
